@@ -6,7 +6,7 @@ This project addresses the challenging task of Automatic Disfluency Restoration,
 
 This work requires models to understand not just what was said, but also how it was said, including the natural pauses, hesitations, and filler words that are an integral part of human communication.
 
-The Core Technical Challenge
+# The Core Technical Challenge
 
 The underlying task is a multi-modal sequence-to-sequence prediction problem: taking the clean transcript and the audio signal as inputs to generate the full, disfluent transcript as output.
 
@@ -18,7 +18,7 @@ Data Preprocessing as a Skill: The ability to programmatically create target tra
 
 Model Selection and Fine-tuning: Choosing and fine-tuning appropriate models (e.g., ASR or sophisticated sequence-to-sequence architectures) capable of handling the complexities of spoken language, especially within limited computational resources.
 
-Project Focus & Deliverables
+# Project Focus & Deliverables
 
 This project is an exercise in practical deep learning skills, requiring participants to:
 
@@ -28,7 +28,7 @@ Select and fine-tune appropriate models for this complex speech task.
 
 Develop an end-to-end system that processes both audio and text to generate the final verbatim transcript.
 
-🗃️ Dataset Description (Hindi Audio)
+# 🗃️ Dataset Description (Hindi Audio)
 
 The dataset consists of audio clips in Hindi, their corresponding transcripts, and a list of common disfluencies. Your system must use the audio and a "clean" text input to predict the original, disfluent output.
 
@@ -42,11 +42,7 @@ unique_disfluencies.csv: A helper file containing a list of all unique disfluent
 
 downloaded_audios/: A directory containing all audio files in .wav format, named after the sample ID. This is the required multi-modal input.
 
-Submission Format
-
-You must submit a CSV file with exactly two columns: id and transcript. The transcript column should contain your model's predicted verbatim transcript (with disfluencies).
-
-Evaluation Metric
+# Evaluation Metric
 
 The system is evaluated using the Word Error Rate (WER), the standard metric for assessing Automatic Speech Recognition systems.
 
